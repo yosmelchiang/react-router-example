@@ -1,0 +1,31 @@
+nav {
+  background-color: wheat;
+  box-shadow: 3px 3px 5px;
+}
+
+ul {
+  /* Removes the dots on the li items */
+  list-style: none;
+
+  /* Positions the li items in a row */
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* We selects Links as anchor tags because they are... anchor tags */
+nav a {
+  height: 50px;
+  margin: 0 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  transition: all 0.2s;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+}
+ul li:first-child{
+  margin-right: auto;
+}
