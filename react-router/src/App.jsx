@@ -5,6 +5,7 @@ import Home from '../pages/Home.jsx'
 import Blog from '../pages/Blog.jsx'
 import Contact from '../pages/Contact.jsx'
 import Products from '../pages/Products.jsx'
+import ProductDetails from '../pages/ProductDetails.jsx';
 import About from '../pages/About.jsx'
 
 import './App.css'
@@ -50,6 +51,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home weather={weather} />}/>
       <Route path="/products" element={<Products products={products}/>}/>
+      <Route path="/products/:id" element={<ProductDetails />}/>
       <Route path="/blog" element={<Blog />}/>
       <Route path="/contact" element={<Contact />}/>
       <Route path="/about" element={<About />}/>
