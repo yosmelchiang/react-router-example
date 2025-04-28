@@ -27,7 +27,7 @@ function App() {
 
       fetch(url.toString())
       .then(res => res.json())
-      .then(data => setWeather(data.main.feels_like))
+      .then(data => setWeather(data.main.temp))
       .catch(err => console.error(err))
 
       fetch(PRODUCTS_URL)
